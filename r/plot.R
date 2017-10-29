@@ -15,7 +15,8 @@ ggplot(df, aes(`2013`, `2016`, size = active, color = `2016` - `2013`)) +
   theme_minimal() +
   theme(legend.position="none") +
   labs(title = 'Democratic Two-Party Vote Share', 
-          subtitle = '2016 vs 2013 General Election',
-          caption = "Data via Virginia Department of Elections")
+       x = "2013 Gubernatorial",
+       y = "2016 Presidential",
+       caption = "Data via Virginia Department of Elections")
   
 ggsave("img/2013_2016.png")
