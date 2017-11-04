@@ -10,5 +10,10 @@ Notes:
 * Points are scaled by the number of active voters in a locality from 
 October 2017 registration data
 
+## 2017 Gubernatorial vs 2013 Gubernatorial
+
+
+## 2017 Gubernatorial vs 2016 Presidential
+
 ## 2016 Presidential vs 2013 Gubernatorial General Election
 ![](/img/2013_2016.png)

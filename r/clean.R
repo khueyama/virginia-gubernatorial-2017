@@ -23,7 +23,8 @@ read_results <- function(year, office) {
 }
 
 # load results data
-df_results <- read_results(2016, 'President and Vice President') %>%
+df_results <- read_results(2017, 'Governor') %>%
+  bindrows(read_results(2016, 'President and Vice President')) %>%
   bind_rows(read_results(2013, 'Governor'))
   
 # save results data
@@ -45,7 +46,7 @@ read_registered <- function(year, month) {
 }
 
 # load registered data
-df_registered <- read_registered('2017', '09')
+df_registered <- read_registered('2017', '10')
 
 # save registered data
 save(df_registered, file = 'data/df_registered.Rdata')
