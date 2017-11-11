@@ -24,7 +24,7 @@ read_results <- function(year, office) {
 
 # load results data
 df_results <- read_results(2017, 'Governor') %>%
-  bindrows(read_results(2016, 'President and Vice President')) %>%
+  bind_rows(read_results(2016, 'President and Vice President')) %>%
   bind_rows(read_results(2013, 'Governor'))
   
 # save results data
