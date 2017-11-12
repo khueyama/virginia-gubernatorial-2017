@@ -1,5 +1,3 @@
-library(tidyverse)
-
 # function to read results by year
 read_results <- function(year, office) {
   stub <- 'https://apps.elections.virginia.gov/SBE_CSV/ELECTIONS/ELECTIONRESULTS/%i/%i November General.csv'
